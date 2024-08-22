@@ -1,0 +1,141 @@
+<html>
+    <title>Layout</title>
+    <head></head>
+    <style>
+        *{
+            margin: 0px;
+        }
+        header{
+            display: flex;
+            flex-direction: row;
+
+        }
+        .left{
+            height: 200px;
+            width: 20%;
+            background-color: orchid;
+            background-image: url("k.jpg");
+            background-size: cover;
+        }
+        .right{
+            height: 200px;
+            width: 80%;
+            background-color: lavender;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        
+       nav{
+        height: 50px;
+        display: flex;
+        background-color: rgba(102, 51, 153, 0.452);
+        flex-direction: row;
+        font-size: 30px;
+       }
+       .n{
+        height: inherit;
+        width: 20%;
+        display: flex;
+        justify-content: end;
+        margin-left: 50px;
+        align-items: center;
+       }
+       .n:hover{
+        background-color: cadetblue;
+        transition: 2s;
+       }
+       a{
+        color: white;
+         text-decoration: none;
+       }
+       section{
+        height: 500px;
+        display: flex;
+        flex-direction: row;
+       }
+       .s1{
+        height: inherit;
+        width: 20%;
+        background-color:lightsteelblue;
+       }
+       .s2{
+        height: inherit;
+        width: 60%;
+        background-color:rgba(114, 224, 189, 0.452);
+        text-align: center;
+       }
+       .s3{
+        height: inherit;
+        width: 20%;
+        background-color:powderblue;
+       }
+       marquee{
+        height: inherit;
+       }
+       p{
+        font-size: 20px;
+       }
+       marquee{
+        text-align: center;
+        font-size: 20px;
+       }
+       footer{
+         background-color: bisque;
+         font-size: 20px;
+         text-align: center;
+       }
+    </style>
+    <body>
+        <header>
+            <div class="left"></div>
+            <div class="right">
+                <h1>This is Young!</h1>
+                <p>A famous actress from korea</p>
+                <h3 style="margin-left: 50px;">- Azra ^-^</h3>
+            </div>
+        </header>
+            <nav>
+                <div class="n">
+                    <a href="">Name</a>
+                </div>
+                <div class="n">
+                    <a href="">Age</a>
+                </div>
+                <div class="n">
+                    <a href="">Started</a>
+                </div>
+                <div class="n">
+                    <a href="">Career</a>
+                </div>
+            </nav>
+            <section>
+                <div class = "s1">
+                    <marquee direction = "up" onmouseout="this.start()" onmousemove="this.stop()">
+                        <h3>Young</h3>
+                        <h3>Yoon</h3>
+                        <h3>kang</h3>
+                    </marquee>
+                </div>
+                <div class = "s2">
+                   
+                        <h3>30,Started at 2004</h3>
+                        <h3>31,Started at 2000</h3>
+                        <h3>32,Started at 2001</h3>
+                    </marquee>
+                </div>
+                <div class = "s3">
+                    <marquee direction ="up" onmouseout="this.start()" onmouseover="this.stop()">
+                        <h3>Actress</h3>
+                        <h3>Actress</h3>
+                        <h3>Actress</h3>
+                    </marquee>
+                </div>
+
+            </section>
+        <footer>
+           <h2>Thank you</h2>
+        </footer>
+    </body>
+</html>
